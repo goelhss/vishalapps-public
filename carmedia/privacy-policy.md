@@ -4,6 +4,8 @@ Effective date: September 4, 2026
 
 CarMedia is a personal music and podcast application with optional user-enabled tools. It does not include advertising or an analytics SDK. CarMedia is an independent application and is not affiliated with Google, Finnhub, Sigma, participating libraries, or podcast publishers.
 
+The developer does not collect, receive, sell, or share user data. Any network transfers described below go directly from the user's device to a service the user has chosen for the requested feature, such as the user's own Google Drive account, a podcast publisher, Finnhub, Sigma, or a selected library catalog.
+
 ## Music And Podcasts
 
 CarMedia reads music files or folders that the user permits Android to expose. Music metadata, favourites, queues, and playback state are stored on the device. Podcast feeds and audio are requested from their publishers only when the user refreshes or plays them. Those providers receive normal network information such as the device IP address.
