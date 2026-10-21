@@ -13,7 +13,7 @@ CarMediaPlayer is a music and podcast player provided by Vishal Goel. It plays a
 
 ## Advertising and third-party services
 
-The current production release does not show ads or load a production advertising SDK. Development builds may show test ad banners on phone screens. A future release may introduce consent-aware phone advertising, in which case this policy and the Play Data safety declaration must be updated before that release. Ads are not shown in Android Auto, playback notifications, or background playback.
+The current release build does not show ads or load a production advertising SDK. Development builds may show test ad banners on phone screens. A future release may introduce consent-aware phone advertising, in which case this policy and the Play Data safety declaration must be updated before that release. Ads are not shown in Android Auto, playback notifications, or background playback.
 
 Podcast providers and LRCLIB handle requests under their own privacy practices. Android, Google Play, and Google Assistant may process information as part of the operating system or services you choose to use; their privacy practices are governed by their own policies. CarMediaPlayer does not sell your personal information.
 
