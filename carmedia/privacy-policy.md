@@ -1,10 +1,10 @@
 # CarMedia Privacy Policy
 
-Effective date: September 4, 2026
+Effective date: November 21, 2026
 
-CarMedia is a personal music and podcast application with optional user-enabled tools. It does not include advertising or an analytics SDK. CarMedia is an independent application and is not affiliated with Google, Finnhub, Sigma, participating libraries, or podcast publishers.
+CarMedia is a personal music and podcast application with optional user-enabled tools. It does not include advertising. The optional Gemini Nano feature uses Google ML Kit, whose diagnostic collection is described below. CarMedia is an independent application and is not affiliated with Google, Finnhub, Sigma, participating libraries, or podcast publishers.
 
-The developer does not collect, receive, sell, or share user data. Any network transfers described below go directly from the user's device to a service the user has chosen for the requested feature, such as the user's own Google Drive account, a podcast publisher, Finnhub, Sigma, or a selected library catalog.
+The developer does not receive or sell your schedule text or Nano output. Google ML Kit collects SDK diagnostics when initialized for the optional Nano feature, as described below. Any network transfers described below go directly from the user's device to a service the user has chosen for the requested feature, such as the user's own Google Drive account, a podcast publisher, Finnhub, Sigma, or a selected library catalog.
 
 ## Music And Podcasts
 
@@ -26,6 +26,12 @@ Optional features are disabled on a new installation and are enabled only by the
 - Voice controls and Voice Memos request microphone access only when used. System speech recognition is handled by the recognition provider configured on the phone.
 - Feature Requests can use user-selected folders and photos. Files are created or shared only after a user action.
 - Diagnostics are off by default. If enabled, logs may contain media names or folder information and leave the device only when the user shares them.
+
+## Optional Gemini Nano Schedule Recovery
+
+After a user taps Use LLM to process, PersonalConsole initializes Google ML Kit and may download or prepare Gemini Nano through Android's AICore service. It supplies bounded public Sigma schedule text to the on-device model. Prompt text and generated schedules are processed on-device and are not sent to a cloud inference service. Nano results are validated and displayed temporarily; they do not overwrite the saved schedule.
+
+Google documents that ML Kit collects device and application information, user/device or other identifiers and per-installation identifiers, performance metrics, API configuration, input/output sizes, feature versions, event types and error codes for diagnostics and usage analytics. This SDK collection is separate from PersonalConsole's optional local diagnostic logs. The app defers ML Kit initialization until the Nano action; users can use the app without this feature. Google encrypts this collected diagnostic data in transit and states that it is not transferred to third parties. See [Google's ML Kit data disclosure](https://developers.google.com/ml-kit/android-data-disclosure) and [ML Kit terms and privacy](https://developers.google.com/ml-kit/terms).
 
 ## Permissions And Retention
 
