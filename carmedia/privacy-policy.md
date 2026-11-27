@@ -1,6 +1,6 @@
 # CarMedia Privacy Policy
 
-Effective date: November 24, 2026
+Effective date: November 27, 2026
 
 CarMedia is a personal music and podcast application with optional user-enabled tools. It does not include advertising. The optional Gemini Nano feature uses Google ML Kit, whose diagnostic collection is described below. CarMedia is an independent application and is not affiliated with Google, Finnhub, Sigma, participating libraries, or podcast publishers.
 
@@ -23,6 +23,7 @@ Portable `.cmcfg` files are encrypted with a user-supplied Decode key. If the us
 Optional features are disabled on a new installation and are enabled only by the user.
 
 - Stocks sends requested ticker symbols and the user's own Finnhub API key to Finnhub. The key is stored securely on the device and is excluded from ordinary backups. CarMedia does not bundle a shared key, redistribute a common data feed, or provide investment advice.
+- Maps requests foreground location when you choose to save your current position. Parking history stores the coordinates and time after you confirm. Opening a saved parking location passes those coordinates to Google Maps. You can delete an entry or clear the history in the app. Parking history is included in manual local and Google Drive backups, and can be included in Android backup and device transfer when enabled.
 - Sigma Schedule requests public schedule data from Sigma Martial Arts.
 - Library Cards generates Codabar barcodes locally from saved numeric card numbers and connects to a selected catalog only when the user chooses a catalog action. Users may save custom HTTPS library links. CarMedia identifies and confirms a custom destination before trying saved credentials there.
 - Voice controls and Voice Memos request microphone access only when used. System speech recognition is handled by the recognition provider configured on the phone.
